@@ -1,0 +1,266 @@
+// 导入中间部分的样式
+@import './mid_nav.less';
+// 导入底部样式
+@import './footer.less';
+@themGray: #eaeaea;
+@themAGray: #b3aeae;
+@themRed: #ea4a36;
+@themLRed: #e1251b;
+@themFontColor: #333;
+@themLLRed: #e12228;
+@themAside: #7a6e6e;
+
+// 版心
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+// 清除浮动
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#wrap {
+
+    // 侧边栏动画
+    .rightAside {
+        width: 300px;
+        position: fixed;
+        // right: 0;
+        height: 100%;
+        background-color: bisque;
+        border-left: 8px solid @themAside;
+
+        .logo {
+            position: absolute;
+            top: 0;
+            left: -35px;
+            width: 35px;
+            height: 35px;
+            background: @themAside;
+            border-radius: 3px 0 0 3px;
+            background-size: 35px 35px;
+            cursor: pointer;
+        }
+
+        .logoin {
+            background-image: url(../images/list.png);
+        }
+
+        .logoout {
+            background-image: url(../images/cross.png);
+        }
+
+        // 尚品会员
+        .customerlist {
+            position: absolute;
+            width: 35px;
+            height: 35px;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -35px;
+
+            .listitem {
+                cursor: pointer;
+                background: #7a6e6e;
+
+                .icon {
+                    width: 35px;
+                    height: 35px;
+                    background: #7a6e6e url(../images/toolbars.png) -87px -174px no-repeat;
+                    transition: 0.5s;
+                }
+
+                .vip {
+                    position: absolute;
+                    width: 65px;
+                    height: 35px;
+                    line-height: 35px;
+                    text-align: center;
+                    color: #fff;
+                    background: pink;
+                    position: absolute;
+                    z-index: -1;
+                }
+
+                .vip1 {
+                    top: 0;
+                    transition: 0.5s;
+                }
+
+                .vip2 {
+                    top: 35px;
+                }
+
+                .vip3 {
+                    top: 70px;
+                }
+
+                .vip4 {
+                    top: 105px;
+                }
+
+                .vip5 {
+                    top: 140px;
+                }
+
+                .vip6 {
+                    top: 175px;
+                }
+
+                .show {
+                    left: -64px;
+                    transition: 0.5s;
+                }
+
+                .hidden {
+                    left: 35px;
+                    transition: 0.5s;
+                }
+            }
+        }
+    }
+
+    // 进入时
+    .fadein {
+        right: 0;
+        transition: all .7s;
+    }
+
+    // 离开时
+    .fadeout {
+        right: -300px;
+        transition: all .7s;
+    }
+
+    // 头部
+    #header {
+
+        // 头部导航条
+        .headernav {
+            background-color: @themGray;
+
+            .container {
+                display: flex;
+                justify-content: space-between;
+                height: 30px;
+                line-height: 30px;
+
+                // 左边
+                .left {
+                    span {
+                        &:nth-child(2) {
+                            padding-right: 3px;
+                            border-right: 1px solid @themAGray;
+                        }
+                    }
+                }
+
+                // 右边
+                .right {
+                    .rightlist {
+                        display: flex;
+
+                        li {
+                            margin-left: 10px;
+
+                            a {
+                                padding-right: 10px;
+                                border-right: 1px solid @themAGray;
+                            }
+
+                            &:last-child {
+                                a {
+                                    border: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // logo+输入框
+        .logoIbox {
+
+            // 版心
+            .container {
+                display: flex;
+                justify-content: space-between;
+
+                // 左边logo
+                .logobox {
+                    img {
+                        width: 175px;
+                        height: 56px;
+                        margin: 25px 45px;
+                    }
+                }
+
+                // 右边表单
+                form {
+                    display: flex;
+                    margin-top: 35px;
+
+                    input {
+                        height: 32px;
+                        width: 490px;
+                        padding: 0px 4px;
+                        border: 3px solid @themRed;
+                        box-sizing: border-box;
+                        font-size: 12px;
+                        vertical-align: middle;
+                    }
+
+                    .btn {
+                        width: 68px;
+                        height: 32px;
+                        background: @themRed;
+                        color: #fff;
+                        border: none;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        // 商品导航
+        .navgation {
+            border-bottom: 2px solid @themLRed;
+
+            // 版心
+            .container {
+                display: flex;
+
+                // 左边红色部分
+                .red {
+                    width: 210px;
+                    height: 50px;
+                    background: #e1251b;
+                    color: #fff;
+                    font-size: 14px;
+                    font-weight: bold;
+                    line-height: 50px;
+                    text-align: center;
+                }
+
+                // 右边导航
+                .list {
+                    display: flex;
+
+                    li {
+                        height: 50px;
+                        line-height: 50px;
+                        margin: 0 22px;
+                        font-size: 16px;
+                        color: @themFontColor;
+                    }
+                }
+            }
+        }
+
+    }
+}

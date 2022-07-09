@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- 侧边栏动画 -->
+        <div class="rightAside fadeout">
+            <div class="logo logoout"></div>
+            <ul class="customerlist">
+                <li class="listitem">
+                    <p class="icon"></p>
+                    <p class="vip vip1 hidden">尚品会员</p>
+                </li>
+                <li class="listitem">
+                    <p class="icon"></p>
+                    <p class="vip vip2 hidden">尚品会员</p>
+                </li>
+                <li class="listitem">
+                    <p class="icon"></p>
+                    <p class="vip vip3 hidden">尚品会员</p>
+                </li>
+                <li class="listitem">
+                    <p class="icon"></p>
+                    <p class="vip vip4 hidden">尚品会员</p>
+                </li>
+                <li class="listitem">
+                    <p class="icon"></p>
+                    <p class="vip vip5 hidden">尚品会员</p>
+                </li>
+                <li class="listitem">
+                    <p class="icon"></p>
+                    <p class="vip vip6 hidden">尚品会员</p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 头部 -->
+        <Header id="header">
+            <!-- 头部导航栏 -->
+            <div class="headernav">
+                <!-- 版心 -->
+                <div class="container">
+                    <!-- 左边 -->
+                    <div class="left">
+                        <span>欢迎来到尚品汇！</span>
+                        <span><a href="#">请登录</a></span>
+                        <span><a href="#">注册</a></span>
+                    </div>
+                    <!-- 右边 -->
+                    <div class="right">
+                        <ul class="rightlist">
+                            <li><a href="#">我的订单</a></li>
+                            <li><a href="#">我的购物车</a></li>
+                            <li><a href="#">我的尚品汇</a></li>
+                            <li><a href="#">尚品汇会员</a></li>
+                            <li><a href="#">企业采购</a></li>
+                            <li><a href="#">关注尚品汇</a></li>
+                            <li><a href="#">合作招商</a></li>
+                            <li><a href="#">商家后台</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- logo+输入框 -->
+            <div class="logoIbox">
+                <!-- 版心 -->
+                <div class="container">
+                    <!-- 左边logo -->
+                    <div class="logobox">
+                        <img draggable="false" src="./images/Logo.png">
+                    </div>
+                    <!-- 右边输入框 -->
+                    <form action="#">
+                        <input type="text" placeholder="请输入要搜索的商品">
+                        <button class="btn">搜索</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- 商品导航栏 -->
+            <div class="navgation">
+                <!-- 版心 -->
+                <div class="container">
+                    <div class="red">全部商品分类</div>
+                    <ul class="list">
+                        <li class="listItem"><a href="javascript:;">服装城</a></li>
+                        <li class="listItem"><a href="javascript:;">美妆馆</a></li>
+                        <li class="listItem"><a href="javascript:;">尚品汇超市</a></li>
+                        <li class="listItem"><a href="javascript:;">全球购</a></li>
+                        <li class="listItem"><a href="javascript:;">闪购</a></li>
+                        <li class="listItem"><a href="javascript:;">团购</a></li>
+                        <li class="listItem"><a href="javascript:;">有趣</a></li>
+                        <li class="listItem"><a href="javascript:;">秒杀</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </Header>
+
+        <!-- 中间部分 -->
+        <Nav id="mid_nav">
+            <!-- 版心 -->
+            <div class="container">
+                <!-- 左半部分 -->
+                <div class="toleft">
+                    <!-- 面包屑导航 -->
+                    <div class="crumb">
+                        <!-- <span class="crumbitem"><a href="javascript:;">手机、数码、通讯/</a></span>
+                        <span class="crumbitem"><a href="javascript:;">手机/</a></span>
+                        <span class="crumbitem"><a href="javascript:;">Apple苹果/</a></span>
+                        <span class="crumbitem">iphone 6S系</span> -->
+                    </div>
+
+                    <!-- 内左边部分 -->
+                    <div class="left">
+                        <!-- 手机盒子 -->
+                        <div class="phonebox clearfix">
+                            <!-- 小图片 -->
+                            <img class="smallPic" src="./images/s1.png" alt="">
+                            <!-- 蒙版 -->
+                            <div class="mask"></div>
+                            <!-- 最顶层的盒子 -->
+                            <div class="indexbox"></div>
+                            <!-- 大图片 -->
+                            <div class="zoom">
+                                <img src="./images/b1.png" alt="">
+                            </div>
+                        </div>
+
+                        <!-- 图片列表 -->
+                        <div class="piclist">
+                            <!-- 左边的箭头 -->
+                            <div class="prev">&lt;</div>
+                            <!-- 中间的图片列表 -->
+                            <div class="outer">
+                                <ul class="listqueue">
+                                    <!-- <li class="listitem"><img src="./images/s1.png"></li>
+                                    <li class="listitem"><img src="./images/s2.png"></li>
+                                    <li class="listitem"><img src="./images/s1.png"></li>
+                                    <li class="listitem"><img src="./images/s1.png"></li>
+                                    <li class="listitem"><img src="./images/s3.png"></li>
+                                    <li class="listitem"><img src="./images/s2.png"></li>
+                                    <li class="listitem"><img src="./images/s2.png"></li>
+                                    <li class="listitem"><img src="./images/s1.png"></li>
+                                    <li class="listitem"><img src="./images/s3.png"></li>
+                                    <li class="listitem"><img src="./images/s1.png"></li> -->
+                                </ul>
+                            </div>
+                            <!-- 右边的箭头 -->
+                            <div class="next">&gt;</div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- 右边部分 -->
+                <div class="right">
+                    <!-- 第一部分数据内容盒子 -->
+                    <div class="topLatestedData">
+                        <h3>Apple iPhone 6s（A1700）64G玫瑰金色 移动通信电信4G手机bbb123</h3>
+                        <p class="discount">推荐选择下方[移动优惠购],手机套餐齐搞定,不用换号,每月还有花费返</p>
+                        <!-- 价格栏 -->
+                        <div class="colorbox">
+                            <!-- 独立的一行内容 -->
+                            <div class="boxitem">
+                                <!-- 属性名 -->
+                                <span class="title">价&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格 </span>
+                                <!-- 属性内容 -->
+                                <span class="content">
+                                    <span class="price_font">¥</span>
+                                    <span class="price">5299</span>
+                                    <span class="price_after">降价通知</span>
+                                </span>
+                            </div>
+                            <!-- 独立的一行内容 -->
+                            <div class="boxitem">
+                                <!-- 属性名 -->
+                                <span class="title">促&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;销 </span>
+                                <!-- 属性内容 -->
+                                <span class="content">
+                                    <span class="add_price">加价购</span>
+                                    <span
+                                        style="padding-right: 60px;color: #999;">满999.00另加20.00元，或满1999.00另加30.00元，或满2999.00另加40.00元，即可在购物车换购热销商品</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="boxitem">
+
+                            <!-- 属性名 -->
+                            <span class="title">支&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;持 </span>
+                            <!-- 属性内容 -->
+                            <span class="content">
+                                <span style="color: #999;">以旧换新，闲置手机回收 4G套餐超值抢 礼品购</span>
+                            </span>
+
+                        </div>
+                        <div class="boxitem">
+
+                            <!-- 属性名 -->
+                            <span class="title">配&nbsp;送&nbsp;至</span>
+                            <!-- 属性内容 -->
+                            <span class="content">
+                                <span style="color: #999;">广东省 深圳市 宝安区</span>
+                            </span>
+
+                        </div>
+                    </div>
+                    <!-- 一条横线 -->
+                    <div class="line"></div>
+                    <!-- 选中的内容 -->
+                    <div class="choosed">
+                        <mark>金色<span>×</span></mark> <mark>白色<span>×</span></mark>
+                    </div>
+                    <div class="labels">
+                        <!-- <div class="boxitem"> -->
+
+                        <!-- 属性名 -->
+                        <!-- <span class="title">购买方式</span> -->
+                        <!-- 属性内容 -->
+                        <!-- <span class="content">
+                                <span class="btn active">官方标配</span>
+                                <span class="btn">优惠移动版</span>
+                                <span class="btn">电信优惠版</span>
+                            </span> -->
+
+                        <!-- </div> -->
+                    </div>
+                    <!-- 加入购物车 -->
+                    <div class="goodscar">
+                        <!-- 计数器 -->
+                        <div class="control">
+                            <input type="text" value="1">
+                            <div class="computed">
+                                <span class="add"><a href="javascript:;">+</a></span>
+                                <span class="reduce"><a href="javascript:;">-</a></span>
+                            </div>
+                        </div>
+                        <!-- 按钮 -->
+                        <button class="carbtn">加入购物车</button>
+                    </div>
+                </div>
+
+            </div>
+        </Nav>
+        <!-- 底部 -->
+        <footer id="footer">
+            <!-- 版心 -->
+            <div class="container">
+                <!-- 左边栏 -->
+                <div class="leftAside">
+                    <!-- 两个兄弟标签 -->
+                    <div class="bro">
+                        <span class="active">相关分类</span><span class="hidden">推荐品牌</span>
+                    </div>
+                    <!-- 商品种类 -->
+                    <div class="goodstyle">
+                        <!-- 商品类别 -->
+                        <ul class="goodslist">
+                            <li>手机</li>
+                            <li>手机壳</li>
+                            <li>内存卡</li>
+                            <li>iphone配件</li>
+                            <li>贴膜</li>
+                            <li>手机耳机</li>
+                            <li>移动电源</li>
+                            <li>平板电脑</li>
+                        </ul>
+                        <!-- 手机列表 -->
+                        <ul class="phonelist">
+                            <li class="listitem">
+                                <img src="./images/part01.png">
+                                <p>Apple苹果iPhone 6s (A1699)</p>
+                                <p class="phone_price">¥6088.00</p>
+                                <p class="shopbtn"><a href="#">加入购物车</a></p>
+                            </li>
+                            <li class="listitem">
+                                <img src="./images/part01.png">
+                                <p>Apple苹果iPhone 6s (A1699)</p>
+                                <p class="phone_price">¥6088.00</p>
+                                <p class="shopbtn"><a href="#">加入购物车</a></p>
+                            </li>
+                            <li class="listitem">
+                                <img src="./images/part01.png">
+                                <p>Apple苹果iPhone 6s (A1699)</p>
+                                <p class="phone_price">¥6088.00</p>
+                                <p class="shopbtn"><a href="#">加入购物车</a></p>
+                            </li>
+                            <li class="listitem">
+                                <img src="./images/part01.png">
+                                <p>Apple苹果iPhone 6s (A1699)</p>
+                                <p class="phone_price">¥6088.00</p>
+                                <p class="shopbtn"><a href="#">加入购物车</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="recommend">
+                        <p>推荐品牌</p>
+                    </div>
+                </div>
+
+                <!-- 中间部分 -->
+                <div class="middlecontent">
+                    <!-- 上面部分的选择购买模块 -->
+                    <div class="topgoods">
+                        <!-- 头标签 -->
+                        <h3 class="topheader">选择搭配</h3>
+                        <!-- 在售商品 -->
+                        <div class="saling">
+                            <div class="nochange">
+                                <img src="./images/l-m01.png">
+                                <p>¥5299</p>
+                            </div>
+                            <div class="add">+</div>
+                            <!-- 购买商品 -->
+                            <ul class="checkgoods">
+                                <li class="checkgoodslist">
+                                    <img src="./images/dp01.png">
+                                    <label for="mon1">
+                                        <p>Feless费勒斯VR</p>
+                                        <input id="mon1" type="checkbox">
+                                        <span>50</span>
+                                    </label>
+                                </li>
+                                <li class="checkgoodslist">
+                                    <img src="./images/dp02.png">
+                                    <label for="mon2">
+                                        <p>Feless费勒斯VR</p>
+                                        <input type="checkbox" id="mon2">
+                                        <span>50</span>
+                                    </label>
+                                </li>
+                                <li class="checkgoodslist">
+                                    <img src="./images/dp03.png">
+                                    <label for="mon3">
+                                        <p>Feless费勒斯VR</p>
+                                        <input type="checkbox" id="mon3">
+                                        <span>50</span>
+                                    </label>
+                                </li>
+                                <li class="checkgoodslist">
+                                    <img src="./images/dp04.png">
+                                    <label for="mon4">
+                                        <p>Feless费勒斯VR</p>
+                                        <input type="checkbox" id="mon4">
+                                        <span>50</span>
+                                    </label>
+                                </li>
+                            </ul>
+                            <!-- 结算商品 -->
+                            <div class="checkout">
+                                <p>已购0件商品</p>
+                                <p>套餐价</p>
+                                <p><span>￥</span> <span class="totalPrice">5299</span></p>
+                                <button class="carbtn">加入购物车</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 下面的内容区 -->
+                    <div class="content">
+                        <!-- 头部分区 -->
+                        <div class="diffzone">
+                            <ul class="zonelist">
+                                <li class="active"><a href="javascript:;">商品介绍</a></li>
+                                <li><a href="javascript:;">规格包装</a></li>
+                                <li><a href="javascript:;">售后与保障</a></li>
+                                <li><a href="javascript:;">商品评价</a></li>
+                                <li><a href="javascript:;">手机社区</a></li>
+                            </ul>
+                        </div>
+                        <!-- 内容详情区 -->
+                        <div class="active">
+                            <ul>
+                                <li>分辨率：1920*1080(FHD)</li>
+                                <li>后置摄像头：1200万像素</li>
+                                <li>前置摄像头：500万像素</li>
+                                <li>核 数：其他</li>
+                                <li>频 率：以官网信息为准</li>
+                                <li>品牌： Apple</li>
+                                <li>商品名称：APPLEiPhone 6s Plus</li>
+                                <li>商品编号：1861098</li>
+                                <li>商品产地：中国大陆</li>
+                                <li>商品毛重：0.51kg</li>
+                                <li>热点：指纹识别，Apple Pay，金属机身，拍照神器</li>
+                                <li>系统：苹果（IOS）</li>
+                                <li>像素：1000-1600万品毛重：0.51kg</li>
+                                <li>机身内存：64GB</li>
+                            </ul>
+                            <img src="./images/intro01.png">
+                            <img src="./images/intro02.png">
+                            <img src="./images/intro03.png">
+                        </div>
+                        <div class="selectzone">
+                            <div>
+                                <p>规格包装</p>
+                            </div>
+                            <div>
+                                <p>售后与保障</p>
+                            </div>
+                            <div>
+                                <p>商品评价</p>
+                            </div>
+                            <div>
+                                <p>手机社区</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- 引入数据 -->
+    <script src="./js/data.js"></script>
+    <!-- 引入封装的插件库函数 -->
+    <script src="./js/plugins.js"></script>
+    <!-- 引入入口函数 -->
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

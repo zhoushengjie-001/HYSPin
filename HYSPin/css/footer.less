@@ -1,0 +1,272 @@
+@themGray: #eaeaea;
+@themAGray: #b3aeae;
+@themRed: #ea4a36;
+@themLRed: #e1251b;
+@themFontColor: #333;
+@themLLRed: #e12228;
+
+#wrap {
+
+    // 底部
+    #footer {
+
+        // 版心
+        .container {
+            margin: 30px auto 0;
+            display: flex;
+            justify-content: flex-start;
+
+            // 左边栏
+            .leftAside {
+                width: 210px;
+                border: 1px solid #ccc;
+                height: fit-content;
+
+                // 两个兄弟标签
+                .bro {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: center;
+                    color: black;
+                    font-weight: bold;
+                    height: 44px;
+                    line-height: 44px;
+                    text-align: center;
+                    user-select: none;
+
+                    span {
+                        flex: 1;
+                        box-sizing: border-box;
+                        text-align: center;
+                    }
+
+                    .active {
+                        border-top: 3px solid #e1251b;
+                        border-bottom: 1px solid #fff;
+                    }
+
+                    .hidden {
+                        border-bottom: 1px solid @themGray;
+                    }
+
+                }
+
+                // 商品种类
+                .goodstyle {
+                    padding: 10px;
+
+                    // 商品类别
+                    .goodslist {
+                        display: flex;
+                        flex-flow: row wrap;
+
+                        li {
+                            height: 28px;
+                            line-height: 28px;
+                            width: 50%;
+                            border-bottom: 1px dashed @themGray;
+                            box-sizing: border-box;
+                        }
+                    }
+
+                    // 手机列表
+                    .phonelist {
+                        display: flex;
+                        flex-flow: row wrap;
+
+                        .listitem {
+                            width: 100%;
+                            text-align: center;
+                            border-bottom: 1px solid @themGray;
+
+                            img {
+                                display: block;
+                                margin: 0 auto;
+                            }
+
+                            .phone_price {
+                                color: @themLRed;
+                                font-size: 14px;
+                                font-weight: bold;
+                            }
+
+                            .shopbtn {
+                                margin: 5px auto;
+                                border: 1px solid #8c8c8c;
+                                padding: 2px 5px;
+                                color: #8c8c8c;
+                                line-height: 18px;
+                            }
+                        }
+                    }
+                }
+
+                .recommend {
+                    display: none;
+
+                    p {
+                        text-align: center;
+                        height: 28px;
+                        line-height: 28px;
+                    }
+                }
+            }
+
+            // 中间部分
+            .middlecontent {
+                width: 980px;
+                margin-left: 10px;
+
+                // 上面部分的选择购买模块
+                .topgoods {
+                    border: 1px solid @themGray;
+                    margin-bottom: 15px;
+
+                    // 头标签
+                    .topheader {
+                        color: black;
+                        background-color: @themGray;
+                        border-bottom: 1px solid #ddd;
+                        padding: 5px 0 5px 15px;
+                    }
+
+                    // 在售商品
+                    .saling {
+                        padding: 10px 0;
+                        display: flex;
+                        flex-flow: row wrap;
+
+                        // 固定商品
+                        .nochange {
+                            width: 127px;
+                            height: 165px;
+
+                            img {
+                                display: block;
+                                margin: 0 auto;
+                            }
+
+                            p {
+                                color: #c81623;
+                                font-size: 16px;
+                                text-align: center;
+                            }
+                        }
+
+                        // 加号
+                        .add {
+                            text-align: center;
+                            height: 165px;
+                            line-height: 165px;
+                        }
+
+                        // 勾选商品
+                        .checkgoods {
+                            width: 668px;
+                            height: 165px;
+                            display: flex;
+                            user-select: none;
+
+                            .checkgoodslist {
+                                width: 25%;
+                                text-align: center;
+
+                                img {
+                                    display: block;
+                                    margin: 0 auto;
+                                }
+                            }
+                        }
+
+                        // 结算
+                        .checkout {
+                            padding-left: 20px;
+                            border-left: 1px solid @themGray;
+
+                            p {
+                                margin: 10px 0;
+                                color: black;
+                            }
+
+                            p:nth-child(2) {
+                                font-weight: bold;
+                            }
+
+                            p:nth-child(3) {
+                                font-weight: bold;
+                                color: #c81623;
+                                font-size: 16px;
+                            }
+
+                            // 按钮
+                            .carbtn {
+                                padding: 0 25px;
+                                line-height: 36px;
+                                font-size: 16px;
+                                background: #e1251b;
+                                border: none;
+                                outline: none;
+                                color: #fff;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+
+                // 下面的内容区
+                .content {
+
+                    // 头部分区
+                    .diffzone {
+                        background-color: @themGray;
+
+                        // 分区列表
+                        .zonelist {
+                            display: flex;
+
+                            li {
+                                border: 1px solid #ddd;
+                                background: #fff;
+                                height: 40px;
+                                line-height: 40px;
+                                padding: 0 11px;
+                                border-right: none;
+                            }
+
+                            .active {
+                                background-color: #ea4a36;
+
+                                a {
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+
+                    // 内容详情区
+                    .active {
+                        padding-top: 10px;
+                        padding-left: 10px;
+
+                        ul {
+                            li {
+                                margin-bottom: 10px;
+                            }
+                        }
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                    .selectzone {
+                        div {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

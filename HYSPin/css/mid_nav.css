@@ -1,0 +1,226 @@
+#wrap #mid_nav .container {
+  display: flex;
+  justify-content: space-between;
+}
+#wrap #mid_nav .container .toleft .crumb {
+  margin-top: 15px;
+  padding: 9px 15px 9px 0;
+}
+#wrap #mid_nav .container .toleft .left {
+  width: 400px;
+  height: 400px;
+  border: 1px solid #DFDFDF;
+}
+#wrap #mid_nav .container .toleft .left .phonebox {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+#wrap #mid_nav .container .toleft .left .phonebox img {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+}
+#wrap #mid_nav .container .toleft .left .phonebox .mask {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 0;
+  left: 0;
+  border: 1px solid #ddd;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-sizing: border-box;
+  display: none;
+}
+#wrap #mid_nav .container .toleft .left .phonebox .indexbox {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+#wrap #mid_nav .container .toleft .left .phonebox .zoom {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  left: 400px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: none;
+}
+#wrap #mid_nav .container .toleft .left .phonebox .zoom img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 800px;
+  height: 800px;
+}
+#wrap #mid_nav .container .toleft .left .piclist {
+  width: 400px;
+  margin-top: 5px;
+  display: flex;
+}
+#wrap #mid_nav .container .toleft .left .piclist .prev,
+#wrap #mid_nav .container .toleft .left .piclist .next {
+  width: 12px;
+  height: 54px;
+  line-height: 54px;
+  text-align: center;
+  background-color: #eaeaea;
+  border: 1px solid #b3aeae;
+  cursor: pointer;
+  user-select: none;
+}
+#wrap #mid_nav .container .toleft .left .piclist .outer {
+  height: 58px;
+  flex: 1;
+  width: 372px;
+  overflow: hidden;
+  position: relative;
+}
+#wrap #mid_nav .container .toleft .left .piclist .outer .listqueue {
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.8s;
+}
+#wrap #mid_nav .container .toleft .left .piclist .outer .listqueue .listitem {
+  border: 1px solid #ddd;
+  margin: 0 12px;
+  height: 55px;
+  width: 50px;
+  box-sizing: border-box;
+}
+#wrap #mid_nav .container .toleft .left .piclist .outer .listqueue .listitem img {
+  width: 48px;
+  height: 50px;
+}
+#wrap #mid_nav .container .boxitem {
+  margin: 10px 0;
+  width: 520px;
+  height: 34px;
+  line-height: 34px;
+}
+#wrap #mid_nav .container .boxitem .title {
+  padding-right: 15px;
+  color: #333;
+}
+#wrap #mid_nav .container .boxitem .content .price_font {
+  font-size: 12px;
+}
+#wrap #mid_nav .container .boxitem .content .price {
+  font-size: 20px;
+  font-weight: bold;
+}
+#wrap #mid_nav .container .boxitem .content .add_price {
+  background: #c81623;
+  padding: 3px;
+  color: #fff;
+}
+#wrap #mid_nav .container .boxitem .content .btn {
+  user-select: none;
+  cursor: pointer;
+  margin-right: 5px;
+  color: #666;
+  line-height: 24px;
+  padding: 6px 14px;
+  border-top: 1px solid #eee;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+}
+#wrap #mid_nav .container .boxitem .content .active {
+  color: red;
+}
+#wrap #mid_nav .container .right {
+  margin-top: 30px;
+  padding: 9px 15px 9px 0;
+  width: 700px;
+  height: 555px;
+  overflow: hidden;
+}
+#wrap #mid_nav .container .right .discount {
+  color: #e12228;
+  font-size: 12px;
+  margin-top: 15px;
+}
+#wrap #mid_nav .container .right .colorbox {
+  margin-top: 10px;
+  background-color: #fee9ec;
+  color: #e12228;
+  padding: 7px;
+  height: 115px;
+}
+#wrap #mid_nav .container .right .line {
+  margin-top: 5px;
+  height: 0;
+  border-top: 1px solid #eaeaea;
+}
+#wrap #mid_nav .container .right .choosed {
+  margin-top: 10px;
+}
+#wrap #mid_nav .container .right .choosed mark {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  background: snow;
+  border: 1px solid #ddd;
+  padding: 0 20px;
+  margin-right: 20px;
+}
+#wrap #mid_nav .container .right .choosed mark span {
+  color: red;
+  margin-left: 20px;
+  cursor: pointer;
+}
+#wrap #mid_nav .container .right .labels {
+  margin-top: 10px;
+}
+#wrap #mid_nav .container .right .goodscar {
+  display: flex;
+  justify-content: flex-start;
+}
+#wrap #mid_nav .container .right .goodscar .control {
+  display: flex;
+  margin-right: 30px;
+}
+#wrap #mid_nav .container .right .goodscar .control input {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #eaeaea;
+  box-sizing: border-box;
+}
+#wrap #mid_nav .container .right .goodscar .control .computed {
+  display: flex;
+  flex-direction: column;
+}
+#wrap #mid_nav .container .right .goodscar .control .computed .add {
+  width: 17px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  background-color: #eaeaea;
+  cursor: pointer;
+}
+#wrap #mid_nav .container .right .goodscar .control .computed .reduce {
+  width: 17px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  background-color: #eaeaea;
+  cursor: pointer;
+}
+#wrap #mid_nav .container .right .goodscar .carbtn {
+  padding: 0 25px;
+  line-height: 36px;
+  font-size: 16px;
+  background: #e1251b;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+}
